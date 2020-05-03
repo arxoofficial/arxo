@@ -3,10 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
+  "engines": {
+    "node": "12.16.2"
+  },
   "scripts": {
     "test": "node main.js debug",
     "start": "node main.js",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "ng build --prod",
+    "hoek": ">=4.2.1",
+    "cryptiles": ">=4.1.2"
   },
   "author": "",
   "license": "ISC",
